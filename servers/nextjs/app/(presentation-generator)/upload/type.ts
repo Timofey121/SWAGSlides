@@ -1,0 +1,54 @@
+export interface UploadedFile {
+  id: string;
+  file: File;
+  size: string;
+}
+export enum ThemeType {
+  Light = "light",
+  Dark = "dark",
+  Custom = "custom",
+  Faint_Yellow = "faint_yellow",
+  Royal_Blue = "royal_blue",
+  Light_Red = "light_red",
+  Dark_Pink = "dark_pink",
+}
+
+export enum LanguageType {
+  English = "English",
+  Russian = "Russian (Русский)",
+}
+
+export interface PresentationConfig {
+  audience: AudienceType;
+  slides: string | null;
+  language: LanguageType | null;
+  prompt: string;
+  tone: ToneType;
+  verbosity: VerbosityType;
+  instructions: string;
+  includeTableOfContents: boolean;
+  includeTitleSlide: boolean;
+  webSearch: boolean;
+}
+
+export enum AudienceType {
+  Consulting = "consulting",
+  AgencyColdKP = "agency_cold_kp",
+  Education = "education",
+}
+
+export enum ToneType {
+  Default = "default",
+  Casual = "casual",
+  Professional = "professional",
+  Funny = "funny",
+  Educational = "educational",
+  Sales_Pitch = "sales_pitch",
+}
+
+export enum VerbosityType {
+  Concise = "concise",
+  Standard = "standard",
+  Text_Heavy = "text-heavy",
+}
+

@@ -1,0 +1,29 @@
+/.git
+/.github
+/.cursor
+/.vscode
+
+# Local data / outputs
+/app_data
+/user_data
+/tmp
+/debug
+
+# Node / Next build outputs
+**/node_modules
+**/.next
+**/dist
+**/out
+**/.turbo
+**/*.tsbuildinfo
+
+# Python caches / venvs
+**/__pycache__
+**/.pytest_cache
+**/.venv
+
+# Electron app (not needed for server Docker image)
+/electron
+
+# Large misc
+**/*.log

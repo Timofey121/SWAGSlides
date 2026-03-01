@@ -1,0 +1,35 @@
+.env
+.env.*
+
+app_data
+user_data
+tmp
+debug
+
+node_modules
+.next
+.next-build
+dist
+out
+
+__pycache__/
+.pytest_cache/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Build artifacts
+build/
+*.tsbuildinfo
+*.pyc
+*.pyz
+*.egg-info/
+*.egg
+
+# OS
+.DS_Store
+
+# Cursor
+.cursor/
